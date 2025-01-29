@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { Icons } from "./icons"
 import Link from "next/link";
 import { FaTelegram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
