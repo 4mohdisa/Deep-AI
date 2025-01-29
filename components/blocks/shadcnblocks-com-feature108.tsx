@@ -3,7 +3,6 @@ import { Layout, Pointer, Zap } from "lucide-react";
 import Image from "next/image";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 interface TabContent {
   badge: string;
