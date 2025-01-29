@@ -1,7 +1,7 @@
 import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 import Image from "next/image";
 import { Feature108 } from "@/components/blocks/shadcnblocks-com-feature108"
-import { Brain, Laugh, Users, Sparkles, MessageSquare, Rocket } from "lucide-react";
+import { Brain, Laugh, Users } from "lucide-react";
 import { FeatureSteps } from "@/components/blocks/feature-section";
 import { TextRevealByWord } from "@/components/ui/text-reveal";
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
