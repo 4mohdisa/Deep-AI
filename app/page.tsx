@@ -16,12 +16,13 @@ const websiteContent = {
       label: "AI Enthusiasts Unite",
       content: {
         badge: "Community Vibes",
-        title: "Connect with Fellow AI Fans",
-        description:
-          "Share your AI memes, discuss the latest trends, and connect with people who share your passion for artificial intelligence - all in a fun, welcoming environment!",
+        title: "Community First",
+        description: "Join our vibrant community of AI enthusiasts and meme lovers.",
+        icon: <Users className="h-4 w-4" />,
         buttonText: "Join Community",
-        imageSrc: "/images/placeholder.svg",
-        imageAlt: "AI Community",
+        buttonLink: "https://t.me/+eIaWovBDPTViZTBl",
+        imageSrc: "/images/DEEP.AI  TOKEN (1).jpg",
+        imageAlt: "Deep AI Community"
       },
     },
     {
@@ -30,12 +31,13 @@ const websiteContent = {
       label: "Meme Corner",
       content: {
         badge: "Fun Zone",
-        title: "AI Memes & Good Times",
-        description:
-          "From Machine Learning Mishaps to Neural Network Nonsense - dive into our collection of AI-themed memes and join our weekly meme contests!",
+        title: "AI Powered Memes",
+        description: "Create and share AI-themed memes with fellow enthusiasts.",
+        icon: <Brain className="h-4 w-4" />,
         buttonText: "See Memes",
-        imageSrc: "/images/placeholder.svg",
-        imageAlt: "AI Memes",
+        buttonLink: "https://x.com/deep_ai21",
+        imageSrc: "/images/DEEP.AI  TOKEN (2).jpg",
+        imageAlt: "AI Memes"
       },
     },
     {
@@ -44,12 +46,13 @@ const websiteContent = {
       label: "Tech Discussions",
       content: {
         badge: "Knowledge Share",
-        title: "Casual AI Discussions",
-        description:
-          "Stay updated with the latest in AI, share your thoughts on new developments, and learn from fellow enthusiasts - no gatekeeping, all skill levels welcome!",
+        title: "Fun & Learning",
+        description: "Engage in discussions about AI while having fun with memes.",
+        icon: <Laugh className="h-4 w-4" />,
         buttonText: "Join Talks",
-        imageSrc: "/images/placeholder.svg",
-        imageAlt: "Tech Discussions",
+        buttonLink: "https://t.me/+eIaWovBDPTViZTBl",
+        imageSrc: "/images/DEEP.AI  TOKEN (3).jpg",
+        imageAlt: "AI Learning"
       },
     },
   ],
@@ -64,22 +67,22 @@ export default function Home() {
         <FeatureSteps 
           features={[
             {
-              step: "Join Us",
-              title: "Get Some DAI",
-              content: "Grab your Deep AI tokens and become part of our memetic movement. Available on major DEXes - join us for the memes!",
-              image: "/images/placeholder.svg"
+              step: "Step 1",
+              title: "Join Our Community",
+              content: "Connect with fellow AI enthusiasts and meme lovers.",
+              image: "/images/DEEP.AI  TOKEN (4).jpg"
             },
             {
-              step: "Connect",
-              title: "Enter the Community",
-              content: "Jump into our Discord, share your favorite AI memes, and meet fellow enthusiasts who love both AI and good humor.",
-              image: "/images/placeholder.svg"
+              step: "Step 2",
+              title: "Share & Create",
+              content: "Create and share your favorite AI-themed memes.",
+              image: "/images/DEEP.AI  TOKEN (5).jpg"
             },
             {
-              step: "Have Fun",
-              title: "Participate & Enjoy",
-              content: "Join our meme contests, tech talk Tuesdays, and weekend watch parties. Remember - we're here for the memes and good times!",
-              image: "/images/placeholder.svg"
+              step: "Step 3",
+              title: "Engage & Learn",
+              content: "Participate in discussions and learn about AI.",
+              image: "/images/DEEP.AI  TOKEN (7).jpg"
             }
           ]} 
         />

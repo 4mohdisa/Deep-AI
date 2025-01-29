@@ -8,7 +8,7 @@ function StackedCircularFooter() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <Link
-            href="https://twitter.com/deepai_token"
+            href="https://x.com/deep_ai21"
             className="text-gray-400 hover:text-gray-500"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,7 +17,7 @@ function StackedCircularFooter() {
             <FaSquareXTwitter className="h-6 w-6" />
           </Link>
           <Link
-            href="https://t.me/deepai_community"
+            href="https://t.me/+eIaWovBDPTViZTBl"
             className="text-gray-400 hover:text-gray-500"
             target="_blank"
             rel="noopener noreferrer"

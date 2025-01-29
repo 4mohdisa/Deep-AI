@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 
 interface Feature {
   step: string
-  title?: string
+  title: string
   content: string
   image: string
 }
@@ -74,12 +74,21 @@ export function FeatureSteps({
                 </motion.div>
 
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-semibold">
-                    {feature.title || feature.step}
-                  </h3>
-                  <p className="text-sm md:text-lg text-muted-foreground">
-                    {feature.content}
-                  </p>
+                  <div className="flex flex-col gap-4">
+                    <div className="space-y-2">
+                      <span className="text-sm font-medium text-muted-foreground">{feature.step}</span>
+                      <h3 className="text-xl font-bold">{feature.title}</h3>
+                      <p className="text-muted-foreground">{feature.content}</p>
+                    </div>
+                    <div className="relative h-48 w-full rounded-lg overflow-hidden">
+                      <Image
+                        src={feature.image}
+                        alt={feature.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -104,7 +113,7 @@ export function FeatureSteps({
                     >
                       <Image
                         src={feature.image}
-                        alt={feature.step}
+                        alt={feature.title}
                         className="w-full h-full object-cover transition-transform transform"
                         width={1000}
                         height={500}

@@ -10,6 +10,7 @@ interface TabContent {
   title: string;
   description: string;
   buttonText: string;
+  buttonLink: string;
   imageSrc: string;
   imageAlt: string;
 }
@@ -36,43 +37,46 @@ const Feature108 = ({
     {
       value: "tab-1",
       icon: <Zap className="h-auto w-4 shrink-0" />,
-      label: "Boost Revenue",
+      label: "Community Vibes",
       content: {
-        badge: "Modern Tactics",
-        title: "Make your site a true standout.",
+        badge: "Community Vibes",
+        title: "AI Enthusiasts Unite",
         description:
-          "Discover new web trends that help you craft sleek, highly functional sites that drive traffic and convert leads into customers.",
-        buttonText: "See Plans",
-        imageSrc: "/images/block/placeholder-dark-1.svg",
-        imageAlt: "placeholder",
+          "Share your AI memes, discuss the latest trends, and connect with people who share your passion for artificial intelligence - all in a fun, welcoming environment!",
+        buttonText: "Join Community",
+        buttonLink: "https://t.me/+eIaWovBDPTViZTBl",
+        imageSrc: "/images/DEEP.AI  TOKEN (7).jpg",
+        imageAlt: "AI Community",
       },
     },
     {
       value: "tab-2",
       icon: <Pointer className="h-auto w-4 shrink-0" />,
-      label: "Higher Engagement",
+      label: "Meme Corner",
       content: {
-        badge: "Expert Features",
-        title: "Boost your site with top-tier design.",
+        badge: "Fun Zone",
+        title: "AI Memes & Good Times",
         description:
-          "Use stellar design to easily engage users and strengthen their loyalty. Create a seamless experience that keeps them coming back for more.",
-        buttonText: "See Tools",
-        imageSrc: "/images/block/placeholder-dark-2.svg",
-        imageAlt: "placeholder",
+          "From Machine Learning Mishaps to Neural Network Nonsense - dive into our collection of AI-themed memes and join our weekly meme contests!",
+        buttonText: "See Memes",
+        buttonLink: "https://x.com/deep_ai21",
+        imageSrc: "/images/DEEP.AI  TOKEN (8).jpg",
+        imageAlt: "AI Memes",
       },
     },
     {
       value: "tab-3",
       icon: <Layout className="h-auto w-4 shrink-0" />,
-      label: "Stunning Layouts",
+      label: "Tech Discussions",
       content: {
-        badge: "Elite Solutions",
-        title: "Build an advanced web experience.",
+        badge: "Knowledge Share",
+        title: "Casual AI Discussions",
         description:
-          "Lift your brand with modern tech that grabs attention and drives action. Create a digital experience that stands out from the crowd.",
-        buttonText: "See Options",
-        imageSrc: "/images/block/placeholder-dark-3.svg",
-        imageAlt: "placeholder",
+          "Stay updated with the latest in AI, share your thoughts on new developments, and learn from fellow enthusiasts - no gatekeeping, all skill levels welcome!",
+        buttonText: "Join Talks",
+        buttonLink: "https://t.me/+eIaWovBDPTViZTBl",
+        imageSrc: "/images/DEEP.AI  TOKEN (9).jpg",
+        imageAlt: "Tech Discussions",
       },
     },
   ],
@@ -117,9 +121,14 @@ const Feature108 = ({
                     <p className="text-muted-foreground lg:text-lg">
                       {tab.content.description}
                     </p>
-                    <Button className="mt-2.5 w-fit gap-2" size="lg">
+                    <a
+                      href={tab.content.buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2.5 w-fit gap-2"
+                    >
                       {tab.content.buttonText}
-                    </Button>
+                    </a>
                   </div>
                   <div className="relative h-full w-full">
                     <Image
