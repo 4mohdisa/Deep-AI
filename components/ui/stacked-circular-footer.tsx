@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button"
-import { Send, Twitter } from "lucide-react"
+import { Icons } from "./icons"
 import Link from "next/link";
+import { FaTelegram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
-export function StackedCircularFooter() {
+function StackedCircularFooter() {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -14,7 +16,7 @@ export function StackedCircularFooter() {
             rel="noopener noreferrer"
           >
             <span className="sr-only">Twitter</span>
-            <Twitter className="h-6 w-6" />
+            <FaSquareXTwitter className="h-6 w-6" />
           </Link>
           <Link
             href="https://t.me/deepai_community"
@@ -23,7 +25,7 @@ export function StackedCircularFooter() {
             rel="noopener noreferrer"
           >
             <span className="sr-only">Telegram</span>
-            <Send className="h-6 w-6" />
+            <FaTelegram className="h-6 w-6" />
           </Link>
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
